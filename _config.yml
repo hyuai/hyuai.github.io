@@ -1,25 +1,43 @@
-# Site settings
-title: Clean Blog
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  StartBootstrap
-email_username:  your-email@yourdomain.com
+name: HYU-AI Study
+description: AI Study group @ Hanyang Univ.
+title: tech.blog.HYU-AI
+ori_url: 'https://HYUAISTUDY.github.io'
+url: 'HYUAISTUDY.github.io'
+author: 'Maydev'
+permalink: /posts/:title/
+type: 'blog'
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+resume: 'https://github.com/MaybeS/MaybeS.github.io/blob/master/assets/data/resume.pdf?raw=true'
+avatar: 'https://avatars0.githubusercontent.com/u/7712538?v=3&s=460'
+attach: 'https://raw.githubusercontent.com/MaybeS/MaybeS.github.io/master/assets/images/attach/'
+github: 'https://github.com/MaybeS'
 
-# Build settings
+paginate: 50
+base: /
+domain_name: 'https://HYUAISTUDY.github.io'
+google_analytics: ''
+disqus_shortname: 'hyuai'
+
 markdown: kramdown
 highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-gems: [jekyll-paginate, jekyll-feed]
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+  
+future: true
+fbcomments: true
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
