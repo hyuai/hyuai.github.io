@@ -4,4 +4,5 @@ title: About
 permalink: /about/
 ---
 
-이제 jekyll도 공부합시다
+HYU AI STUDY
+HANYANG UNIVERSITY AI STUDY CLUB
